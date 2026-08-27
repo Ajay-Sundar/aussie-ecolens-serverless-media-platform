@@ -1,0 +1,55 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+AWS-Config.txt
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+
+# Dependency folders
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Build outputs
+frontend/dist/
+frontend/build/
+build/
+dist/
+
+# ML model weights and generated inference outputs
+*.pt
+ml-service/cropped_images*/
+ml-service/thumbnails/
+ml-service/temp_single_image_input/
+ml-service/local_media_db.json
+ml-service/mg_detections*.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+
+# Archives and assignment bundles
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Assignment-only documents
+*AI_Declaration*.pdf
+*Rubric*.pdf
+*rubric*.pdf

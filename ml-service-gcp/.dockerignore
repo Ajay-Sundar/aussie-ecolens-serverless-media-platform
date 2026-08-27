@@ -1,0 +1,33 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environment / secrets
+.env
+.env.*
+.venv/
+venv/
+
+# Git files are not needed inside Docker image
+.git/
+.gitignore
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime logs/cache
+*.log
+.pytest_cache/
+.cache/
+
+# Large ML model files should not be copied into the image from Git context
+# unless your Dockerfile explicitly downloads or mounts them another way.
+models/
+*.pt
+*.pth
+*.onnx
